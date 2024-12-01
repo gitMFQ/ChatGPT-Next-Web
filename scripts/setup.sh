@@ -47,14 +47,14 @@ if ! command -v node >/dev/null || ! command -v git >/dev/null || ! command -v y
       fi
       ;;
     Darwin)
-      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      /usr/bin/ruby -e "$(curl -fsSL https://ghp.ci/raw.githubusercontent.com/Homebrew/install/master/install)"
       brew install node git yarn
       ;;
   esac
 fi
 
 # Clone the repository and install dependencies
-git clone https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web
+git clone https://ghp.ci/github.com/ChatGPTNextWeb/ChatGPT-Next-Web
 cd ChatGPT-Next-Web
 yarn install
 
